@@ -1,0 +1,34 @@
+{"categories": [ 
+    {
+        "title": "Ansikte",
+        "services": [
+            {
+                "title": "ansikte1",
+                "info": "information"
+            },
+            {
+                "title": "ansikte2",
+                "info": "information"
+            },
+            {
+                "title": "ansikte3",
+                "info": "information"
+            }
+
+        ]
+    },   
+    {
+        "title": "Laser",
+        "services": [
+            {
+                "title": "laser1",
+                "info": "information"
+            },
+            {
+                "title": "laser2",
+                "info": "information"
+            }
+        ]
+    }     
+    ] 
+}
