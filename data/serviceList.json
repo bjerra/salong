@@ -1,4 +1,5 @@
-{
+[
+    {
   "title": "Ansikte",
   "services": [
     {
@@ -10,4 +11,18 @@
       "ifno": "detta ar ne benbehandling"
     }
   ]
-}
+},
+{
+    "title": "Ansikte",
+    "services": [
+      {
+        "title": "Behandling1",
+        "ifno": "detta 'r en bahandling"
+      },
+      {
+        "title": "ben",
+        "ifno": "detta ar ne benbehandling"
+      }
+    ]
+  }
+]

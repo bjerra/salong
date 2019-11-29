@@ -51,8 +51,8 @@ collections:
                 name: 'category'
                 widget: 'relation'
                 collection: 'bdData'
-                searchFields: ['services']
-                valueField: 'services'
+                searchFields: ['title']
+                valueField: 'title'
   - label: "BokaDirekt Data"
     name: "bdData"
     files:           
