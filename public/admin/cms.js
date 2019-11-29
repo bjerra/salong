@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "e94a34b449772f559d45";
+/******/ 	var hotCurrentHash = "a30730ce5074cc751b32";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -2890,45 +2890,71 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 
 var ServicesPageTemplate = function ServicesPageTemplate(_ref) {
-  var title = _ref.title,
+  var serviceCategories = _ref.serviceCategories,
       helmet = _ref.helmet;
-  var PageContent = _components_Content__WEBPACK_IMPORTED_MODULE_5__["default"];
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "section",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
   }, helmet || '', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 16
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "columns",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "column is-10 is-offset-1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "title is-size-2 has-text-weight-bold is-bold-light",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, title)))));
+  }, serviceCategories.map(function (category) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      key: category.title,
+      className: "column is-6",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+      className: "section",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "has-text-centered",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      style: {
+        width: '240px',
+        display: 'inline-block'
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, category.title), category.services.map(function (serivce) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, serivce.title);
+    })));
+  })));
 };
 ServicesPageTemplate.propTypes = {
   title: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
@@ -2937,12 +2963,11 @@ ServicesPageTemplate.propTypes = {
 
 var ServicesPage = function ServicesPage(_ref2) {
   var data = _ref2.data;
-  var serviceCategory = data.allServiceListJson.edges[0].node;
-  var title = serviceCategory.title;
+  var serviceCategories = data.dataJson.serviceCategories;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ServicesPageTemplate, {
@@ -2950,27 +2975,27 @@ var ServicesPage = function ServicesPage(_ref2) {
       titleTemplate: "%s | Blog",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 52
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 53
       },
       __self: this
-    }, "" + title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    }, "Behandlingar"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
       name: "description",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45
+        lineNumber: 54
       },
       __self: this
     })),
-    title: title,
+    serviceCategories: serviceCategories,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 50
     },
     __self: this
   }));
@@ -2983,7 +3008,7 @@ ServicesPage.propTypes = {
 };
 var _default = ServicesPage;
 /* harmony default export */ __webpack_exports__["default"] = (_default);
-var pageQuery = "2166550887";
+var pageQuery = "3605347604";
 ;
 
 (function () {
