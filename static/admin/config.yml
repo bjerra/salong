@@ -51,13 +51,13 @@ collections:
                 name: 'category'
                 widget: 'relation'
                 collection: 'bdData'
-                searchFields: ['title']
-                valueField: 'serviceCategories'
+                searchFields: ['services']
+                valueField: 'services'
   - label: "BokaDirekt Data"
     name: "bdData"
     files:           
-      - label: "ServiceCategory"
-        name: "serviceCategories"    
+      - label: "Services"
+        name: "services"    
         file: "/data/serviceList.json"
         fields:
           - {label: Title, name: title, widget: string}     
