@@ -4,6 +4,10 @@
     {
       "title": "Behandling1",
       "ifno": "detta 'r en bahandling"
+    },
+    {
+      "title": "ben",
+      "ifno": "detta ar ne benbehandling"
     }
   ]
 }
