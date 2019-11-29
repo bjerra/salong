@@ -53,17 +53,20 @@ collections:
                 collection: 'serviceCategories'
                 searchFields: ['title']
                 valueField: 'title'
-  - name: "ServiceCategory"
-    label: "serviceCategories"    
-    folder: "/data"
-    fields:
-      - {label: Title, name: title, widget: string}     
-      - label: Services
-        name: services
-        widget: list
+  - name: "BokaDirekt Data"
+    label: "bdData"
+    files:           
+      - name: "ServiceCategory"
+        label: "serviceCategories"    
+        file: "/data/serviceList.json"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Info, name: ifno, widget: string}
+          - {label: Title, name: title, widget: string}     
+          - label: Services
+            name: services
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Info, name: ifno, widget: string}
 
 
 
