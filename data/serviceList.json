@@ -1,34 +1,13 @@
-{"categories": [ 
+{
+  "title": "Ansikte",
+  "services": [
     {
-        "title": "Ansikte",
-        "services": [
-            {
-                "title": "ansikte1",
-                "info": "information"
-            },
-            {
-                "title": "ansikte2",
-                "info": "information"
-            },
-            {
-                "title": "ansikte3",
-                "info": "information"
-            }
-
-        ]
-    },   
+      "title": "Behandling1",
+      "ifno": "detta 'r en bahandling"
+    },
     {
-        "title": "Laser",
-        "services": [
-            {
-                "title": "laser1",
-                "info": "information"
-            },
-            {
-                "title": "laser2",
-                "info": "information"
-            }
-        ]
-    }     
-    ] 
+      "title": "ben",
+      "ifno": "detta ar ne benbehandling"
+    }
+  ]
 }
